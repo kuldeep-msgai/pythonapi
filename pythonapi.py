@@ -19,8 +19,6 @@ import json
 
 s3 = boto3.resource('s3')
 
-#AWS_ACCESS_KEY_ID = 'AKIAIL2NOJY43WR3WSGA'
-#AWS_SECRET_ACCESS_KEY = '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'
 #mydb = mysql.connector.connect(
 #  host="10.3.2.232",
 #  user="root",
