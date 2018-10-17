@@ -20,10 +20,10 @@ import json
 s3 = boto3.resource('s3')
 
 #mydb = mysql.connector.connect(
-#  host="10.3.2.232",
-#  user="root",
-#  passwd="m4wzpRMA0GBSrsopW5hvMA",
-#  database="msgai_analytics"
+#  host="xx",
+#  user="xx",
+#  passwd="xx",
+#  database="xx"
 #)
 
 
