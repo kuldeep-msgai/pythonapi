@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>S3 UPLOAD</h2>
+<p>The <strong>INPUT URL</strong> and NAME of Image:</p>
+
+<form action="{{ url_for('handle_data') }}" method="post">
+URL of Image:<br>
+<input type="text" name="URL">
+<br>
+Name of Image:<br>
+<input type="text" name="Name">
+<br><br>
+<input type="submit">
+
+</form>
+
+
+<h3>S3 LIST</h3>
+
+<p> Click on Submit <strong> button below </strong></p>
+
+<form action="{{ url_for('get_data') }}" method="post">
+List of Image
+<input type="submit">
+
+</form>
+
+
+
+</body>
+</html>
