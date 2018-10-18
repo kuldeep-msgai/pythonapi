@@ -15,6 +15,8 @@ import urllib.request
 import requests
 from boto.s3.key import Key
 from datetime import date, datetime, timedelta
+import mimetypes
+
 
 s3 = boto3.resource('s3')
 
@@ -48,6 +50,7 @@ def handle_data():
     passwd="xxxx",
     database="test1")
     mycursor = mydb.cursor()
+    mycursor.execute("CREATE TABLE IF NOT EXISTS test1.s3dataa (URL VARCHAR(45) NOT NULL, name VARCHAR(45) NOT NULL, path VARCHAR(45) NOT NULL, date DATETIME NOT NULL);")
     sql = "INSERT INTO s3dataa ( URL, name, path, date) VALUES (%s, %s, %s, %s)"
     val = ( urlname, nameoffile, BUCKET+Key , date_today)
     mycursor.execute(sql, val)
